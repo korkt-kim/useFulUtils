@@ -1,4 +1,4 @@
-import React, { createContext, useContext, type ReactNode } from "react";
+import React, { createContext, useContext, ReactNode } from "react";
 /**
  * Context Provider와 useContext Custom Hook을 반환하는 팩토리 함수
  */
