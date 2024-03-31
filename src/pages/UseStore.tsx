@@ -3,7 +3,7 @@ import { useStore } from "../utils/store/useStore";
 
 import { store } from "..";
 
-export const UseSubscribeState = () => {
+export const UseStore = () => {
   const [state, setState] = useStore(store);
 
   return (
@@ -11,12 +11,12 @@ export const UseSubscribeState = () => {
       {state.count}
       <button onClick={() => setState({ count: state.count + 1 })}>+</button>
       <button onClick={() => setState({ count: state.count - 1 })}>-</button>
-      <Link to="/UseSubscribeState2">to UseSubscribeState2</Link>
+      <Link to="/UseSubscribeState2">to UseStore2</Link>
     </div>
   );
 };
 
-export const UseSubscribeState2 = () => {
+export const UseStore2 = () => {
   const [state, setState] = useStore(store);
 
   return (
@@ -24,7 +24,7 @@ export const UseSubscribeState2 = () => {
       {state.count}
       <button onClick={() => setState({ count: state.count + 1 })}>+</button>
       <button onClick={() => setState({ count: state.count - 1 })}>-</button>
-      <Link to="/UseSubscribeState">to UseSubscribeState</Link>
+      <Link to="/UseSubscribeState">to UseStore</Link>
     </div>
   );
 };
