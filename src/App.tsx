@@ -1,12 +1,14 @@
 import { createEventStore } from "./patterns/PubSub/eventHandle";
 import "./styles.css";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const menus = [
   "CreateStateContext",
   "UseStore",
   "UseSubPub/Event",
   "ComponentControlWithHook/Modal",
+  "Components/TableOfContents",
 ];
 export const globalEventStore = createEventStore();
 

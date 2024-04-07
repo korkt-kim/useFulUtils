@@ -1,0 +1,1 @@
+content?.querySelectorAll(headings.join(", "))
