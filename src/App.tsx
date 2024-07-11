@@ -9,6 +9,7 @@ const menus = [
   "UseSubPub/Event",
   "ComponentControlWithHook/Modal",
   "Components/TableOfContents",
+  "Hooks/useDeepEffect",
 ];
 export const globalEventStore = createEventStore();
 

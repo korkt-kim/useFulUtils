@@ -8,6 +8,7 @@ import { createStore } from "./utils/store/createStore";
 import { Event, Event2 } from "./pages/UseSubPub";
 import { Modal } from "./pages/ComponentControlWithHook/Modal";
 import { TableOfContents } from "./pages/Components/TableOfContents";
+import { UseDeepEffect } from "./pages/Hooks/useDeepEffect";
 const rootElement = document.getElementById("root")!;
 const root = ReactDOM.createRoot(rootElement);
 
@@ -31,6 +32,7 @@ root.render(
       />
       <Route path="/ComponentControlWithHook/Modal" element={<Modal />} />
       <Route path="/Components/TableOfContents" element={<TableOfContents />} />
+      <Route path="/Hooks/useDeepEffect" element={<UseDeepEffect />} />
     </Routes>
   </BrowserRouter>,
 );
